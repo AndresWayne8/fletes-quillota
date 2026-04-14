@@ -576,11 +576,16 @@
             <select id="tipoCarga" required>
   <option value="">Tipo de carga</option>
 
-  <!-- NUEVO (esto agregamos) -->
-  <option>Entrega de productos / emprendimiento</option>
-  <option>Despacho de ventas</option>
+<!-- TIPO DE SERVICIO -->
+<select id="tipoServicio" required>
+  <option value="">Tipo de servicio</option>
+  <option>Flete personal</option>
+  <option>Entrega de productos (emprendimiento)</option>
+</select>
 
-  <!-- LO QUE YA TENÍAS -->
+<!-- TIPO DE CARGA -->
+<select id="tipoCarga" required>
+  <option value="">Tipo de carga</option>
   <option>Liviana</option>
   <option>Media</option>
   <option>Pesada</option>
@@ -784,24 +789,26 @@
       const nombre = document.getElementById("nombre").value.trim();
       const origen = document.getElementById("origen").value.trim();
       const destino = document.getElementById("destino").value.trim();
+      const tipoServicio = document.getElementById("tipoServicio").value;
       const tipoCarga = document.getElementById("tipoCarga").value;
       const vehiculo = document.getElementById("vehiculo").value;
       const fecha = document.getElementById("fecha").value;
       const detalle = document.getElementById("detalle").value.trim();
+let intro = "Hola, quiero cotizar un flete.";
 
-     let intro = "Hola, quiero cotizar un flete.";
-
-if (tipoCarga.includes("Entrega") || tipoCarga.includes("Despacho")) {
+if (tipoServicio.includes("Entrega")) {
   intro = "Hola, quiero cotizar un despacho de productos.";
 }
 
 const message = `
 ${intro}
 
+Tipo de servicio: ${tipoServicio}
+Tipo de carga: ${tipoCarga}
+
 Nombre: ${nombre}
 Origen: ${origen}
 Destino: ${destino}
-Tipo de carga: ${tipoCarga}
 Vehículo: ${vehiculo}
 Fecha: ${fecha}
 Detalle: ${detalle || "Sin detalle adicional"}

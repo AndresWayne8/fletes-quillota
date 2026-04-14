@@ -6,8 +6,9 @@
   <title>Fletes Quillota Express</title>
   <meta
     name="description"
-    content="Fletes rápidos en Quillota, La Cruz, La Calera y alrededores. Cotiza por WhatsApp de forma simple y rápida."/>
-    <link rel="icon" href="chelo.jpeg">
+    content="Fletes rápidos en Quillota, La Cruz, La Calera y alrededores. Cotiza por WhatsApp de forma simple y rápida."
+  />
+  <link rel="icon" href="chelo.jpeg" />
   <style>
     :root {
       --bg: #0b0d10;
@@ -533,6 +534,7 @@
       <a href="#inicio" class="brand">Fletes Quillota Express</a>
       <nav class="nav-links">
         <a href="#servicios">Servicios</a>
+        <a href="#emprendimientos">Entregas</a>
         <a href="#tarifas">Tarifas</a>
         <a href="#zonas">Cobertura</a>
         <a href="#contacto" class="btn btn-primary">Cotizar por WhatsApp</a>
@@ -572,27 +574,26 @@
             <input type="text" id="nombre" placeholder="Nombre y apellido" required />
             <input type="text" id="origen" placeholder="Ej: Quillota centro" required />
             <input type="text" id="destino" placeholder="Ej: La Calera" required />
-<!-- TIPO DE SERVICIO -->
-<select id="tipoServicio" required>
-  <option value="">Tipo de servicio</option>
-  <option>Flete personal</option>
-  <option>Entrega de productos (emprendimiento)</option>
-</select>
 
-<!-- TIPO DE CARGA -->
-<select id="tipoCarga" required>
-  <option value="">Tipo de carga</option>
-  <option>Liviana</option>
-  <option>Media</option>
-  <option>Pesada</option>
-  <option>Mudanza pequeña</option>
-  <option>Materiales / bultos</option>
-</select>
+            <select id="tipoServicio" required>
+              <option value="">Tipo de servicio</option>
+              <option>Flete personal</option>
+              <option>Entrega de productos (emprendimiento)</option>
+            </select>
+
+            <select id="tipoCarga" required>
+              <option value="">Tipo de carga</option>
+              <option>Liviana</option>
+              <option>Media</option>
+              <option>Pesada</option>
+              <option>Mudanza pequeña</option>
+              <option>Materiales / bultos</option>
+            </select>
 
             <select id="vehiculo" required>
               <option value="">Tipo de vehículo</option>
               <option>Camioneta</option>
-              <option>Automovil</option>
+              <option>Automóvil</option>
               <option>No estoy seguro (te asesoro)</option>
             </select>
 
@@ -658,48 +659,49 @@
         </div>
       </div>
     </section>
-<section id="emprendimientos">
-  <div class="container">
-    <h2 class="section-title">¿Vendes productos y no tienes cómo entregarlos?</h2>
-    <p class="section-text">
-      También apoyamos a personas, emprendedores y pequeños negocios que necesitan trasladar productos,
-      pedidos o carga más grande y no cuentan con un vehículo adecuado para hacerlo.
-    </p>
 
-    <div class="cards">
-      <article class="card">
-        <span class="card-icon">📦</span>
-        <h3>Entregas de productos</h3>
-        <p>
-          Si vendes muebles, cajas, frutas, mercadería u otros productos, te ayudamos con el traslado
-          hasta el destino que necesites.
+    <section id="emprendimientos">
+      <div class="container">
+        <h2 class="section-title">¿Vendes productos y no tienes cómo entregarlos?</h2>
+        <p class="section-text">
+          También apoyamos a personas, emprendedores y pequeños negocios que necesitan trasladar productos,
+          pedidos o carga más grande y no cuentan con un vehículo adecuado para hacerlo.
         </p>
-      </article>
 
-      <article class="card">
-        <span class="card-icon">🏪</span>
-        <h3>Apoyo a emprendimientos</h3>
-        <p>
-          Ideal para pymes pequeñas o personas que venden por su cuenta y no tienen vehículo,
-          o el que tienen les queda chico.
-        </p>
-      </article>
+        <div class="cards">
+          <article class="card">
+            <span class="card-icon">📦</span>
+            <h3>Entregas de productos</h3>
+            <p>
+              Si vendes muebles, cajas, frutas, mercadería u otros productos, te ayudamos con el traslado
+              hasta el destino que necesites.
+            </p>
+          </article>
 
-      <article class="card">
-        <span class="card-icon">🚚</span>
-        <h3>Despachos coordinados</h3>
-        <p>
-          Coordinamos retiros y entregas por WhatsApp para que puedas mover productos de forma simple,
-          rápida y sin complicarte.
-        </p>
-      </article>
-    </div>
+          <article class="card">
+            <span class="card-icon">🏪</span>
+            <h3>Apoyo a emprendimientos</h3>
+            <p>
+              Ideal para pymes pequeñas o personas que venden por su cuenta y no tienen vehículo,
+              o el que tienen les queda chico.
+            </p>
+          </article>
 
-    <div style="margin-top: 20px;">
-      <a href="#contacto" class="btn btn-primary">Cotizar traslado</a>
-    </div>
-  </div>
-</section>
+          <article class="card">
+            <span class="card-icon">🚚</span>
+            <h3>Despachos coordinados</h3>
+            <p>
+              Coordinamos retiros y entregas por WhatsApp para que puedas mover productos de forma simple,
+              rápida y sin complicarte.
+            </p>
+          </article>
+        </div>
+
+        <div style="margin-top: 20px;">
+          <a href="#contacto" class="btn btn-primary">Cotizar traslado</a>
+        </div>
+      </div>
+    </section>
 
     <section id="tarifas">
       <div class="container">
@@ -764,17 +766,17 @@
   </main>
 
   <footer>
-  <div class="container">
-    <strong>Fletes Quillota Express</strong><br />
-    Atención por WhatsApp · Quillota y alrededores<br />
-    <div style="margin-top: 10px; font-size: 0.9rem;">
-      <span style="opacity: 0.7;">Desarrollado por</span>
-      <a href="https://andreswayne8.github.io/wayne-dev/#proyectos" target="_blank" rel="noopener noreferrer" class="wayne-link">
-        Wayne Dev
-      </a>
+    <div class="container">
+      <strong>Fletes Quillota Express</strong><br />
+      Atención por WhatsApp · Quillota y alrededores<br />
+      <div style="margin-top: 10px; font-size: 0.9rem;">
+        <span style="opacity: 0.7;">Desarrollado por</span>
+        <a href="https://andreswayne8.github.io/wayne-dev/#proyectos" target="_blank" rel="noopener noreferrer" class="wayne-link">
+          Wayne Dev
+        </a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <script>
     const phone = "56979304490";
@@ -790,13 +792,14 @@
       const vehiculo = document.getElementById("vehiculo").value;
       const fecha = document.getElementById("fecha").value;
       const detalle = document.getElementById("detalle").value.trim();
-let intro = "Hola, quiero cotizar un flete.";
 
-if (tipoServicio.includes("Entrega")) {
-  intro = "Hola, quiero cotizar un despacho de productos.";
-}
+      let intro = "Hola, quiero cotizar un flete.";
 
-const message = `
+      if (tipoServicio.includes("Entrega")) {
+        intro = "Hola, quiero cotizar un despacho de productos.";
+      }
+
+      const message = `
 ${intro}
 
 Tipo de servicio: ${tipoServicio}
@@ -808,7 +811,8 @@ Destino: ${destino}
 Vehículo: ${vehiculo}
 Fecha: ${fecha}
 Detalle: ${detalle || "Sin detalle adicional"}
-`.trim();
+      `.trim();
+
       const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
       window.open(url, "_blank");
     });

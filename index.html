@@ -598,13 +598,14 @@
             </select>
 
             <input type="date" id="fecha" required />
+            <input type="time" id="hora" required />
             <textarea id="detalle" placeholder="Describe brevemente lo que necesitas trasladar"></textarea>
 
             <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
           </form>
 
           <div class="quote-note">
-            Al enviar la solicitud se abrirá WhatsApp con la información lista.
+            Servicio sujeto a disponibilidad. La confirmación final se realiza por WhatsApp.
           </div>
         </aside>
       </div>
@@ -779,7 +780,7 @@
   </footer>
 
   <script>
-    const phone = "56979304490";
+    const phone = "56949045407";
 
     document.getElementById("quoteForm").addEventListener("submit", function (e) {
       e.preventDefault();
@@ -791,6 +792,7 @@
       const tipoCarga = document.getElementById("tipoCarga").value;
       const vehiculo = document.getElementById("vehiculo").value;
       const fecha = document.getElementById("fecha").value;
+      const hora = document.getElementById("hora").value;
       const detalle = document.getElementById("detalle").value.trim();
 
       let intro = "Hola, quiero cotizar un flete.";
@@ -810,6 +812,7 @@ Origen: ${origen}
 Destino: ${destino}
 Vehículo: ${vehiculo}
 Fecha: ${fecha}
+Hora: ${hora}
 Detalle: ${detalle || "Sin detalle adicional"}
       `.trim();
 

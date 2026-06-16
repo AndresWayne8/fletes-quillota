@@ -596,11 +596,8 @@
               <option>Automóvil</option>
               <option>No estoy seguro (te asesoro)</option>
             </select>
-            <label>¿Para cuándo necesita el flete?</label>
-            <input type="date" required>
-
-            <label>¿Hora aproximada?</label>
-            <input type="time" required>
+            <input type="date" id="fecha" required>
+            <input type="time" id="hora" required>
             <textarea id="detalle" placeholder="Describe brevemente lo que necesitas trasladar"></textarea>
 
             <button type="submit" class="btn btn-primary">Enviar por WhatsApp</button>
@@ -782,7 +779,7 @@
   </footer>
 
   <script>
-    const phone = "+56949045407";
+    const phone = "56949045407";
 
     document.getElementById("quoteForm").addEventListener("submit", function (e) {
       e.preventDefault();

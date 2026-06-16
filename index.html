@@ -778,46 +778,46 @@
     </div>
   </footer>
 
-  <script>
-    const phone = "56949045407";
+<script>
+const phone = "56949045407";
 
-    document.getElementById("quoteForm").addEventListener("submit", function (e) {
-      e.preventDefault();
+document.getElementById("quoteForm").addEventListener("submit", function (e) {
+  e.preventDefault();
 
-      const nombre = document.getElementById("nombre").value.trim();
-      const origen = document.getElementById("origen").value.trim();
-      const destino = document.getElementById("destino").value.trim();
-      const tipoServicio = document.getElementById("tipoServicio").value;
-      const tipoCarga = document.getElementById("tipoCarga").value;
-      const vehiculo = document.getElementById("vehiculo").value;
-      const fecha = document.getElementById("fecha").value;
-      const hora = document.getElementById("hora").value;
-      const detalle = document.getElementById("detalle").value.trim();
+  const nombre = document.getElementById("nombre").value.trim();
+  const origen = document.getElementById("origen").value.trim();
+  const destino = document.getElementById("destino").value.trim();
+  const tipoServicio = document.getElementById("tipoServicio").value;
+  const tipoCarga = document.getElementById("tipoCarga").value;
+  const vehiculo = document.getElementById("vehiculo").value;
+  const fecha = document.getElementById("fecha").value;
+  const hora = document.getElementById("hora").value;
+  const detalle = document.getElementById("detalle").value.trim();
 
-      let intro = "Hola, quiero cotizar un flete.";
+  const message = `
+NUEVA SOLICITUD DE FLETE
 
-      if (tipoServicio.includes("Entrega")) {
-        intro = "Hola, quiero cotizar un despacho de productos.";
-      }
+Cliente: ${nombre}
 
-      const message = `
-${intro}
+Origen: ${origen}
+Destino: ${destino}
 
 Tipo de servicio: ${tipoServicio}
 Tipo de carga: ${tipoCarga}
 
-Nombre: ${nombre}
-Origen: ${origen}
-Destino: ${destino}
-Vehículo: ${vehiculo}
+Vehículo solicitado: ${vehiculo}
+
 Fecha: ${fecha}
 Hora: ${hora}
-Detalle: ${detalle || "Sin detalle adicional"}
-      `.trim();
 
-      const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-      window.open(url, "_blank");
-    });
-  </script>
+Detalle:
+${detalle || "Sin detalle adicional"}
+  `.trim();
+
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+  window.open(url, "_blank");
+});
+</script>
 </body>
 </html>
